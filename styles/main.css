@@ -9,17 +9,16 @@ body {
 
 main {
   margin: 3.5em auto;
-  max-width: 1500px;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   background-color: turquoise;
 }
 
 h1 {
-  font-family: Georgia, "Times New Roman", Times, serif;
   font-style: oblique;
   font-size: 2rem;
- 
+  line-height: 2.5rem;
 }
 
 img {
@@ -59,10 +58,10 @@ p {
 }
 
 .text-width {
-  max-width: 50em;
-  text-align: center;
+  max-width: 35rem;
+  text-align: justify;
   background-color: tomato;
-  margin: auto;
+  margin: 1em auto;
 }
 
 .subs-btn,
@@ -115,6 +114,17 @@ nav li:nth-of-type(4) {
   text-decoration: underline;
 }
 
-.alan-g-photo img {
-  max-width: 9000px;
+.alan-g-photo {
+  margin: auto;
+}
+
+.alan-g-photo p {
+  color: #2727273d;
+  font-size: 0.9rem;
+  margin-right: 20rem;
+  line-height: 1rem;
+}
+
+.text-width p + p {
+  margin-top: 0.8rem;
 }
