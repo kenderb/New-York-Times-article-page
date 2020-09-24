@@ -3,6 +3,14 @@
   padding: 0;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
 img {
   width: 100%;
   height: 100%;
@@ -13,7 +21,7 @@ li {
 }
 
 nav {
-  padding: 0.2em 10em;
+  padding: 0.2em 2%;
   background-color: white;
   border-bottom: 0.02em solid #5050503d;
 }
@@ -24,8 +32,29 @@ button {
   padding: 0.2em;
 }
 
+header {
+  background-color: aqua;
+  position: sticky;
+  top: 0;
+}
+
 header img {
   margin-top: 0.4em;
+}
+
+.subs-btn,
+.logIn-btn {
+  background-color: #567b95;
+  padding: 0.9em 1em;
+  border-radius: 0.3em;
+  color: white;
+  font-size: 0.7em;
+  font-weight: bold;
+  border: 0.05em solid #2e2e2e3d;
+}
+
+.logIn-btn {
+  margin-left: -1em;
 }
 
 button .ion-icon {
