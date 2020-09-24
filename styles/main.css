@@ -13,10 +13,9 @@ li {
 }
 
 nav {
-  margin-left: 9em;
-  margin-right: 9em;
-  height: 2.5em;
-  background-color: gray;
+  padding: 0.2em 10em;
+  background-color: white;
+  border-bottom: 0.02em solid #5050503d;
 }
 
 button {
@@ -25,20 +24,24 @@ button {
   padding: 0.2em;
 }
 
-button ion-icon {
-  font-size: 2em;
+header img {
+  margin-top: 0.4em;
+}
+
+button .ion-icon {
+  font-size: 1.4em;
   text-align: center;
 }
 
 .display-flex {
-  display: flex; 
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .margin-btwn li + li {
-margin-left: 1em;
-margin-right: 0.2em;
+  margin-left: 1em;
+  margin-right: 0.2em;
 }
 
 nav li:nth-of-type(5) {
@@ -51,8 +54,11 @@ nav li:nth-of-type(4) {
 
 .space-cosmos-link {
   text-decoration: none;
+  font-weight: bold;
+  font-size: 0.8em;
+  color: black;
 }
-a:hover {
+
+.space-cosmos-link:hover {
   text-decoration: underline;
-  
 }
