@@ -68,11 +68,10 @@ p {
   font-size: 0.8rem;
   line-height: 1rem;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-
 }
 
 .text-width {
-  max-width: 35rem;
+  max-width: 37.5rem;
   text-align: justify;
   margin: 1em auto;
 }
@@ -136,6 +135,10 @@ nav li:nth-of-type(4) {
   font-size: 0.93rem;
   line-height: 1rem;
   display: inline;
+}
+
+.video-credit p {
+  line-height: normal;
 }
 
 .text-width p + p {
@@ -260,10 +263,6 @@ nav li:nth-of-type(4) {
   gap: 1rem;
 }
 
-/* .grid-container-inflation img {
-  max-width: 5rem;
-}
- */
 .main-tittle {
   grid-area: header;
 }
@@ -319,4 +318,26 @@ nav li:nth-of-type(4) {
 
 .video-credit {
   margin-right: 3em;
+}
+
+.bicep-img {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.alternative-text-normal {
+  color: #6d6d6d;
+  font-size: 0.73rem;
+}
+
+.alternative-text-normal a {
+  color: #6d6d6d;
+}
+
+.footer-social-container {
+  justify-content: space-between;
+}
+
+.footer-button {
+  width: 20rem;
 }
