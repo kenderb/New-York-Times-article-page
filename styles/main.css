@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 main {
@@ -59,6 +59,13 @@ p {
   line-height: 1.875rem;
 }
 
+.box-inflation-content p {
+  flex: 50%;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
 .text-width {
   max-width: 35rem;
   text-align: justify;
@@ -91,7 +98,7 @@ button .ion-icon {
   justify-content: center;
 }
 
-.margin-btwn li+li {
+.margin-btwn li + li {
   margin-left: 1em;
   margin-right: 0.2em;
 }
@@ -125,7 +132,7 @@ nav li:nth-of-type(4) {
   line-height: 1rem;
 }
 
-.text-width p+p {
+.text-width p + p {
   margin-top: 0.8rem;
 }
 
@@ -176,7 +183,7 @@ nav li:nth-of-type(4) {
   background-color: white;
 }
 
-.social-media .social-ion-icon+.social-ion-icon {
+.social-media .social-ion-icon + .social-ion-icon {
   margin-left: -1rem;
 }
 
@@ -216,7 +223,7 @@ nav li:nth-of-type(4) {
 }
 
 .bold-text {
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .subscribe-text {
@@ -233,16 +240,68 @@ nav li:nth-of-type(4) {
   background-color: gray;
 }
 
-.grid-container {
+.grid-container-inflation {
   display: grid;
   grid-template-rows: 4rem 1fr 1fr 4rem;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas:
-  "header header header hader"
-  "content1 content2 content3 content4"
-  "content5 content6 content7 content8"
-  "footer footer footer footer"
-  ;
-  background-color: green;
+    "header header header header"
+    "content1 content2 content3 content4"
+    "content5 content6 content7 content8"
+    "footer footer footer footer";
+  margin: 2rem 9rem;
+  gap: 1rem;
+}
 
+/* .grid-container-inflation img {
+  max-width: 5rem;
+}
+ */
+.main-tittle {
+  grid-area: header;
+}
+
+.flex-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-1 {
+  grid-area: content1;
+}
+
+.content-2 {
+  grid-area: content2;
+}
+
+.content-3 {
+  grid-area: content3;
+}
+
+.content-4 {
+  grid-area: content4;
+}
+
+.content-5 {
+  grid-area: content5;
+}
+
+.content-6 {
+  grid-area: content6;
+}
+
+.content-7 {
+  grid-area: content7;
+}
+
+.content-8 {
+  grid-area: content8;
+}
+
+.footer-TTOI {
+  grid-area: footer;
+}
+
+.box-inflation-content img {
+  flex: 1;
 }
