@@ -8,8 +8,9 @@ body {
 }
 
 main {
-  margin: 3.5em auto;
+  margin: 3em auto;
   max-width: 1200px;
+  min-width: 436px;
   display: flex;
   flex-direction: column;
   background-color: turquoise;
@@ -31,9 +32,8 @@ li {
 }
 
 nav {
-  padding: 0.2em 2%;
-  background-color: white;
-  border-bottom: 0.02em solid #5050503d;
+  margin: auto;
+  max-width: 100rem;
 }
 
 button {
@@ -43,13 +43,16 @@ button {
 }
 
 header {
-  background-color: aqua;
+  padding: 0.2em 1rem;
+  background-color: white;
+  border-bottom: 0.02em solid #5050503d;
   position: sticky;
   top: 0;
 }
 
 header img {
   margin-top: 0.4em;
+  max-width: 12em;
 }
 
 p {
