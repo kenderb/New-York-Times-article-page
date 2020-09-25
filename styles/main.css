@@ -102,7 +102,7 @@ button .ion-icon {
   justify-content: center;
 }
 
-.margin-btwn li + li {
+.margin-btwn li+li {
   margin-left: 1em;
   margin-right: 0.2em;
 }
@@ -141,7 +141,7 @@ nav li:nth-of-type(4) {
   line-height: normal;
 }
 
-.text-width p + p {
+.text-width p+p {
   margin-top: 0.8rem;
 }
 
@@ -193,7 +193,7 @@ nav li:nth-of-type(4) {
   background-color: white;
 }
 
-.social-media .social-ion-icon + .social-ion-icon {
+.social-media .social-ion-icon+.social-ion-icon {
   margin-left: -1rem;
 }
 
@@ -270,6 +270,7 @@ nav li:nth-of-type(4) {
 .flex-box {
   display: flex;
   flex-direction: column;
+  background-color: aquamarine;
 }
 
 .content-1 {
@@ -341,3 +342,44 @@ nav li:nth-of-type(4) {
 .footer-button {
   width: 20rem;
 }
+
+.more-articules {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 650px 300px;
+  grid-template-areas:
+    "space-astronomy most-popular"
+    "editor-pick most-popular"
+  ;
+  margin-top: 3rem;
+  gap: 1rem;
+
+}
+
+.more-articules img {
+  max-width: 20rem;
+  
+}
+
+.more-astronomy {
+  grid-area: space-astronomy;
+  display: grid;
+  border-top: 1px solid gray;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.1rem;
+  background-color: green;
+}
+
+.editor-pick {
+  grid-area: editor-pick;
+  border-top: 1px solid gray;
+  background-color: red;
+}
+
+.most-popular {
+  grid-area: most-popular;
+  border-top: 1px solid gray;
+  background-color: yellow;
+}
+
