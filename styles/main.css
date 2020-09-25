@@ -91,7 +91,7 @@ button .ion-icon {
   justify-content: center;
 }
 
-.margin-btwn li + li {
+.margin-btwn li+li {
   margin-left: 1em;
   margin-right: 0.2em;
 }
@@ -116,13 +116,16 @@ nav li:nth-of-type(4) {
 }
 
 .alan-g-photo p {
-  color: #6d6d6d;
-  font-size: 0.93rem;
-  line-height: 1rem;
   display: inline;
 }
 
-.text-width p + p {
+.alternative-text {
+  color: #6d6d6d;
+  font-size: 0.93rem;
+  line-height: 1rem;
+}
+
+.text-width p+p {
   margin-top: 0.8rem;
 }
 
@@ -173,7 +176,7 @@ nav li:nth-of-type(4) {
   background-color: white;
 }
 
-.social-media .social-ion-icon + .social-ion-icon {
+.social-media .social-ion-icon+.social-ion-icon {
   margin-left: -1rem;
 }
 
@@ -194,4 +197,52 @@ nav li:nth-of-type(4) {
 
 .social-container {
   margin-bottom: 1rem;
+}
+
+.hyperlinks {
+  color: #326891;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.hyperlinks:hover {
+  text-decoration: none;
+}
+
+.hyperlink-2 {
+  color: #326891;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.subscribe-text {
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+
+.line {
+  margin: 1em auto 1em;
+  width: 4.2em;
+  height: 1px;
+  background-color: gray;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: 4rem 1fr 1fr 4rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+  "header header header hader"
+  "content1 content2 content3 content4"
+  "content5 content6 content7 content8"
+  "footer footer footer footer"
+  ;
+  background-color: green;
+
 }
