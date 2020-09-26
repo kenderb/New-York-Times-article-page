@@ -211,9 +211,9 @@ nav li:nth-of-type(4) {
 }
 
 .social-media .social-media-numbers {
-  position: relative;
-  top: -3.7rem;
-  left: 0.1rem;
+  position: absolute;
+  top: 0.9rem;
+  left: 1rem;
   font-size: 0.8rem;
 }
 
