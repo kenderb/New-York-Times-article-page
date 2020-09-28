@@ -208,7 +208,7 @@ nav li:nth-of-type(4) {
   background-color: white;
 }
 
-.social-media .social-ion-icon + .social-ion-icon {
+.social-media .social-ion-icon+.social-ion-icon {
   margin-left: -1rem;
 }
 
@@ -362,12 +362,13 @@ nav li:nth-of-type(4) {
   display: grid;
   grid-template-columns: 4.5fr 1fr;
   grid-template-rows: 3fr 1fr;
-  max-height: 97rem;
+  max-height: 90rem;
   grid-template-areas:
     "space-astronomy most-popular"
     "editor-pick most-popular";
   margin-top: 3rem;
   gap: 1rem;
+
 }
 
 .more-articules img {
@@ -396,14 +397,24 @@ nav li:nth-of-type(4) {
 
 .editor-pick {
   grid-area: editor-pick;
+  display: grid;
   border-top: 1px solid gray;
   background-color: red;
+  grid-template-rows: 2rem 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "Ed-title Ed-title"
+  "Ed-item-1 Editem-2 Ed-item-3";
+  gap: 1rem;
 }
 
 .most-popular {
   grid-area: most-popular;
+  display: flex;
+  min-width: 330px;
+  flex-direction: column;
   border-top: 1px solid gray;
-  background-color: yellow;
+  line-height: 1em;
 }
 
 .thumbails-info p {
@@ -418,7 +429,7 @@ nav li:nth-of-type(4) {
 
 .thumbails-info p:nth-child(2) {
   line-height: 1.3rem;
-  font-size: 0.85rem;
+  font-size: 1.1rem;
   margin-right: 2rem;
 }
 
@@ -426,3 +437,44 @@ nav li:nth-of-type(4) {
   color: #2e2e2e3d;
   font-size: 0.7rem;
 }
+
+.most-popular a {
+  text-decoration: none;
+  color: black;
+  border-top: 1px solid rgb(199, 199, 199);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 0.6rem;
+}
+
+.most-popular h3 {
+  margin-bottom: 1.2em;
+}
+
+.most-popular p {
+  line-height: 1em;
+}
+
+.most-popular a:hover {
+  color: gray;
+}
+
+.Ed-title {
+    grid-area: Edtitle;
+    font-size: 0.9rem;   
+    margin-top: 1rem;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  }
+
+.Ed-item-1 {
+  grid-area: Ed-item-1;
+}
+
+.Ed-item-2 {
+  grid-area: Ed-item-2;
+}
+
+.Ed-item-3 {
+  grid-area: Ed-item-3;
+}
+
