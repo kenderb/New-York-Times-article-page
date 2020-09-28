@@ -38,7 +38,6 @@ footer::before {
   display: block;
   height: 5px;
   margin-bottom: 10px;
-
 }
 
 h1 {
@@ -133,7 +132,7 @@ button .ion-icon {
   justify-content: center;
 }
 
-.margin-btwn li+li {
+.margin-btwn li + li {
   margin-left: 1em;
   margin-right: 0.2em;
 }
@@ -151,6 +150,15 @@ nav li:nth-of-type(4) {
   font-weight: bold;
   font-size: 0.8em;
   color: black;
+}
+
+.footer-hyper-links span {
+  text-decoration: none;
+}
+
+.footer-hyper-links span:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .space-cosmos-link:hover {
@@ -172,7 +180,7 @@ nav li:nth-of-type(4) {
   line-height: normal;
 }
 
-.text-width p+p {
+.text-width p + p {
   margin-top: 0.8rem;
 }
 
@@ -224,7 +232,7 @@ nav li:nth-of-type(4) {
   background-color: white;
 }
 
-.social-media .social-ion-icon+.social-ion-icon {
+.social-media .social-ion-icon + .social-ion-icon {
   margin-left: -1rem;
 }
 
@@ -375,19 +383,15 @@ nav li:nth-of-type(4) {
 }
 
 .more-articules {
+  height: 65rem;
   display: grid;
-  grid-template-columns: 4.5fr 1fr;
+  grid-template-columns: 4fr 1.3fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
     "space-astronomy most-popular"
     "editor-pick most-popular";
   margin-top: 3rem;
   gap: 1rem;
-
-}
-
-.more-articules img {
-  max-width: 20rem;
 }
 
 .more-astronomy {
@@ -418,7 +422,6 @@ nav li:nth-of-type(4) {
 .most-popular {
   grid-area: most-popular;
   display: flex;
-  min-width: 330px;
   flex-direction: column;
   border-top: 1px solid gray;
   line-height: 1em;
@@ -496,14 +499,6 @@ nav li:nth-of-type(4) {
   margin: 0.6rem;
 }
 
-.pick-info img {
-  min-width: 20rem;
-}
-
-.editor-pick-phothos {
-  margin-left: -0.6rem;
-}
-
 .flex-box-footer {
   display: flex;
   flex-direction: row;
@@ -533,10 +528,12 @@ footer a {
   color: black;
 }
 
-footer li {
+footer li,
+.footer-margin-top h4 {
   font-family: helvetica, arial, sans-serif;
   font-size: 0.8rem;
 }
+
 .left-border {
   border-left: 1px solid #e2e2e2;
   padding-left: 20px;
@@ -563,4 +560,18 @@ footer li {
 
 .silverware-icon {
   width: 0.9rem;
+}
+
+.left-border span {
+  margin-left: 0.2rem;
+}
+
+.footer-hyper-links {
+  border-top: 0.1rem solid #5f5f5f3d;
+  flex-direction: row;
+  font-size: 0.7rem;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding: 1.5rem 3.5rem 0.01rem 3.5rem;
+  color: #181717bd;
 }
