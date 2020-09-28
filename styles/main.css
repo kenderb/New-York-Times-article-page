@@ -95,6 +95,42 @@ p {
   line-height: 1.875rem;
 }
 
+aside {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 1900px;
+  left: 70%;
+  width: 250px;
+}
+
+aside img {
+  float: left;
+  width: 30%;
+  margin-right: 10px;
+}
+
+aside div {
+  margin-top: 25px;
+  margin-left: 11px;
+}
+
+aside p {
+  font-weight: bold;
+  font-size: 0.8em;
+  color: black;
+  font-family: helvetica;
+  border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+aside a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgb(51, 51, 51);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 .box-inflation-content p {
   font-size: 0.8rem;
   line-height: 1rem;
@@ -537,6 +573,7 @@ footer li {
   font-family: helvetica, arial, sans-serif;
   font-size: 0.8rem;
 }
+
 .left-border {
   border-left: 1px solid #e2e2e2;
   padding-left: 20px;
