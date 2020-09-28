@@ -286,7 +286,6 @@ nav li:nth-of-type(4) {
 .flex-box {
   display: flex;
   flex-direction: column;
-  background-color: aquamarine;
 }
 
 .content-1 {
@@ -361,30 +360,38 @@ nav li:nth-of-type(4) {
 
 .more-articules {
   display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-template-rows: 650px 300px;
+  grid-template-columns: 4.5fr 1fr;
+  grid-template-rows: 3fr 1fr;
+  max-height: 97rem;
   grid-template-areas:
     "space-astronomy most-popular"
-    "editor-pick most-popular"
-  ;
+    "editor-pick most-popular";
   margin-top: 3rem;
   gap: 1rem;
-
 }
 
 .more-articules img {
   max-width: 20rem;
-  
 }
 
 .more-astronomy {
   grid-area: space-astronomy;
   display: grid;
   border-top: 1px solid gray;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 2rem 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 0.1rem;
-  background-color: green;
+  grid-template-areas:
+    "title  title  title"
+    "item-1 item-2 item-3"
+    "item-4 item-5 item-6";
+  gap: 1rem;
+}
+
+.title {
+  font-size: 0.9rem;
+  grid-area: title;
+  margin-top: 1rem;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .editor-pick {
@@ -399,3 +406,23 @@ nav li:nth-of-type(4) {
   background-color: yellow;
 }
 
+.thumbails-info p {
+  font-size: 0.8rem;
+}
+
+.thumbails-info p:nth-child(1) {
+  text-align: right;
+  color: #2e2e2e3d;
+  font-size: 0.6rem;
+}
+
+.thumbails-info p:nth-child(2) {
+  line-height: 1.3rem;
+  font-size: 0.85rem;
+  margin-right: 2rem;
+}
+
+.thumbails-info p:nth-child(3) {
+  color: #2e2e2e3d;
+  font-size: 0.7rem;
+}
