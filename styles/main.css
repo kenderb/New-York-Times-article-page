@@ -25,6 +25,22 @@ main {
   flex-direction: column;
 }
 
+footer {
+  margin: 3em auto;
+  max-width: 1200px;
+  min-width: 436px;
+}
+
+footer::before {
+  border-top: 2px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+  content: " ";
+  display: block;
+  height: 5px;
+  margin-bottom: 10px;
+
+}
+
 h1 {
   font-style: oblique;
   font-size: 2rem;
@@ -361,8 +377,7 @@ nav li:nth-of-type(4) {
 .more-articules {
   display: grid;
   grid-template-columns: 4.5fr 1fr;
-  grid-template-rows: 3fr 1fr;
-  max-height: 54rem;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas:
     "space-astronomy most-popular"
     "editor-pick most-popular";
@@ -397,8 +412,8 @@ nav li:nth-of-type(4) {
 
 .editor-pick {
   grid-area: editor-pick;
-  border-top: 1px solid gray; 
-} 
+  border-top: 1px solid gray;
+}
 
 .most-popular {
   grid-area: most-popular;
@@ -487,4 +502,65 @@ nav li:nth-of-type(4) {
 
 .editor-pick-phothos {
   margin-left: -0.6rem;
+}
+
+.flex-box-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.home-link {
+  color: rgb(86, 123, 149);
+  font-size: 0.7rem;
+}
+
+.home-link::after {
+  content: " \00BB";
+}
+
+.flex-box-footer img {
+  width: 12rem;
+}
+
+.footer-margin-top {
+  margin-top: 2rem;
+  line-height: 1.5rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+footer li {
+  font-family: helvetica, arial, sans-serif;
+  font-size: 0.8rem;
+}
+.left-border {
+  border-left: 1px solid #e2e2e2;
+  padding-left: 20px;
+  margin-left: -50px;
+}
+
+.left-border img {
+  width: 0.9rem;
+  position: relative;
+  top: 0.2rem;
+}
+
+.after-border::after {
+  border-bottom: 1px solid #e2e2e2;
+  content: " ";
+  display: block;
+  height: 5px;
+  margin-bottom: 10px;
+}
+
+.game-board {
+  width: 0.9rem;
+}
+
+.silverware-icon {
+  width: 0.9rem;
 }
