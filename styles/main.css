@@ -51,6 +51,7 @@ img {
 }
 
 iframe {
+  border: none;
   width: 100%;
   height: 320px;
 }
@@ -104,6 +105,7 @@ aside p {
 }
 
 .access-more p {
+  margin: auto;
   font-size: 0.98rem;
 }
 
@@ -607,7 +609,8 @@ nav li:nth-of-type(4) {
   flex-direction: row;
   font-size: 0.7rem;
   justify-content: space-between;
-  margin-top: 0rem;
+  margin-top: 0.5rem;
+  margin-bottom: 5rem;
   padding: 1.5rem 3.5rem 0.01rem 3.5rem;
   color: #181717bd;
 }
@@ -617,14 +620,11 @@ nav li:nth-of-type(4) {
   border-top: 0.1rem solid #363636bd;
   position: fixed;
   width: 100%;
-  margin: auto;
   left: 0;
   bottom: 0;
-  height: 4rem;
+  height: 3.5rem;
   background-color: white;
   align-items: center;
-  padding-left: 16rem;
-  padding-right: 25rem;
 }
 
 .access-more span {
@@ -634,12 +634,12 @@ nav li:nth-of-type(4) {
 
 .expand {
   transform: scale(0.9);
-  margin-left: auto;
 }
 
 .access-more::after {
   content: "\276F";
   margin-left: 1.5rem;
+  margin-right: auto;
   font-size: 1rem;
   font-weight: bold;
   transform: rotate(-90deg);

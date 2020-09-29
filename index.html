@@ -14,10 +14,10 @@
   <header>
     <nav>
       <ul class="display-flex margin-btwn">
-        <li><button class="menu-btn">
+        <li><button class="menu-btn" type="button">
             <ion-icon name="menu-outline" class="ion-icon"></ion-icon>
           </button></li>
-        <li><button class="magnifying-glass-btn">
+        <li><button type="button" class="magnifying-glass-btn">
             <ion-icon name="search-outline" class="ion-icon"></ion-icon>
           </button></li>
         <li><a href="#" class="space-cosmos-link">SPACE & COSMOS
@@ -25,8 +25,8 @@
         <li>
           <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/NewYorkTimes.svg" alt="TNYT-icon" />
         </li>
-        <li><button class="subs-btn">SUBSCRIBE NOW</button></li>
-        <li><button class="logIn-btn">LOG IN</button></li>
+        <li><button type="button" class="subs-btn">SUBSCRIBE NOW</button></li>
+        <li><button type="button" class="logIn-btn">LOG IN</button></li>
       </ul>
     </nav>
   </header>
@@ -63,14 +63,14 @@
         <div class="display-flex social-container">
           <p class="social-date">March 17, 2014</p>
           <div class="social-media">
-            <button><i class="fa fa-facebook" aria-hidden="true"></i></button>
-            <button><i class="fa fa-twitter" aria-hidden="true"></i></button>
-            <button><i class="fa fa-envelope" aria-hidden="true"></i></button>
-            <button><i class="fa fa-share" aria-hidden="true"></i></button>
-            <button class="social-ion-icon">
+            <button type="button"><i class="fa fa-facebook" aria-hidden="true"></i></button>
+            <button type="button"><i class="fa fa-twitter" aria-hidden="true"></i></button>
+            <button type="button"><i class="fa fa-envelope" aria-hidden="true"></i></button>
+            <button type="button"><i class="fa fa-share" aria-hidden="true"></i></button>
+            <button type="button" class="social-ion-icon">
               <ion-icon name="bookmark-outline"></ion-icon>
             </button>
-            <button class="social-ion-icon">
+            <button type="button" class="social-ion-icon">
               <ion-icon name="chatbox-outline"></ion-icon>
               <span class="social-media-numbers">615</span>
             </button>
@@ -102,10 +102,13 @@
         <p>
           “SPECTACULAR REALIZATION,” Dr. Guth wrote across the top of the page and drew
           a double box around it.
-        </p>On Monday, Dr. Guth’s starship came in. Radio astronomers reported that they had seen the beginning of the
-        Big Bang, and that his hypothesis, known undramatically as inflation, looked right.</p>
+        </p>
+        <p>
+          On Monday, Dr. Guth’s starship came in. Radio astronomers reported that they had seen the beginning of the
+          Big Bang, and that his hypothesis, known undramatically as inflation, looked right.
+        </p>
 
-        <p>Reaching back across 13.8 billion years to <a ref="#" class="hyperlinks">the first sliver of cosmic time</a>
+        <p>Reaching back across 13.8 billion years to <a href="#" class="hyperlinks">the first sliver of cosmic time</a>
           with telescopes at the South Pole,
           a team of astronomers led by John M. Kovac of the Harvard-Smithsonian Center for Astrophysics detected ripples
           in the fabric of space-time — so-called <a href="#" class="hyperlinks">gravitational waves</a> — the signature
@@ -255,7 +258,7 @@
           the news.</p>
 
         <div class="video-stanford">
-          <iframe src="https://www.youtube.com/embed/ZlfIVEy_YOA" frameborder="0"
+          <iframe src="https://www.youtube.com/embed/ZlfIVEy_YOA"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
           <div class="video-credit ">
@@ -425,12 +428,12 @@
       </div>
 
       <div class="display-flex footer-social-container text-width">
-        <button class="subs-btn footer-button">READ 615 COMMENTS</button>
+        <button type="button" class="subs-btn footer-button">READ 615 COMMENTS</button>
         <div class="social-media">
-          <button><i class="fa fa-facebook" aria-hidden="true"></i></button>
-          <button><i class="fa fa-twitter" aria-hidden="true"></i></button>
-          <button><i class="fa fa-envelope" aria-hidden="true"></i></button>
-          <button><i class="fa fa-share" aria-hidden="true"></i></button>
+          <button type="button"><i class="fa fa-facebook" aria-hidden="true"></i></button>
+          <button type="button"><i class="fa fa-twitter" aria-hidden="true"></i></button>
+          <button type="button"><i class="fa fa-envelope" aria-hidden="true"></i></button>
+          <button type="button"><i class="fa fa-share" aria-hidden="true"></i></button>
         </div>
       </div>
       <div class="more-articules">
@@ -619,19 +622,21 @@
       </div>
       <div>
         <h4>MORE</h4>
-        <li><a href="#">Reader Center</a></li>
-        <li><a href="#">Wirecutter</a></li>
-        <li><a href="#">Live Events</a></li>
-        <li><a href="#">The Learning Network</a></li>
-        <li><a href="#">Tools & Services</a></li>
-        <li><a href="#">Multimedia</a></li>
-        <li><a href="#">Photography</a></li>
-        <li><a href="#">Video</a></li>
-        <li><a href="#">Newsletters</a></li>
-        <li><a href="#">TimesMachine</a></li>
-        <li><a href="#">NYT Store</a></li>
-        <li><a href="#">Times Journeys</a></li>
-        <li><a href="#">Manage My Account</a></li>
+        <ul>
+          <li><a href="#">Reader Center</a></li>
+          <li><a href="#">Wirecutter</a></li>
+          <li><a href="#">Live Events</a></li>
+          <li><a href="#">The Learning Network</a></li>
+          <li><a href="#">Tools & Services</a></li>
+          <li><a href="#">Multimedia</a></li>
+          <li><a href="#">Photography</a></li>
+          <li><a href="#">Video</a></li>
+          <li><a href="#">Newsletters</a></li>
+          <li><a href="#">TimesMachine</a></li>
+          <li><a href="#">NYT Store</a></li>
+          <li><a href="#">Times Journeys</a></li>
+          <li><a href="#">Manage My Account</a></li>
+        </ul>
       </div>
       <div class="left-border">
         <H4>SUBSCRIBE</H4>
