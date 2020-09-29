@@ -58,5 +58,5 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](https://github.com/kenderb/HTMLForms/blob/feature/LICENSE) licensed.
+This project is [MIT](https://github.com/kenderb/New-York-Times-article-page/blob/Clone-page/LICENSE) licensed.
 
